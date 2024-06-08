@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        blueDark: "#00112F",
+        offRed: "#f12000",
+      },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
+      opacity: {
+        // "gradient": 'linear-gradient(0deg,#00112F,transparent)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
