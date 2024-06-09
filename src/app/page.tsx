@@ -43,9 +43,16 @@ export default function Home() {
 
         {/* <div className="w-screen"></div> */}
 
-        <section className="w-[50%] mx-60 my-96">
+        <section className="mx-60 my-96">
           <AboudMe/>
         </section>
+
+        <section className="mx-60 my-96">
+          <div className=" h-[400px] border-2 border-white">
+
+          </div>
+        </section>
+
       </div>
     </main>
   );
