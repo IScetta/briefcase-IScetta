@@ -5,7 +5,7 @@ import BriefcaseCard from "../briefcase-card";
 import { IProyect } from "@/app/types";
 import { MdClose } from "react-icons/md";
 import Image from "next/image";
-import { proyect } from "@/helper/helper.data";
+import { proyect, proyect2 } from "@/helper/helper.data";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
@@ -16,6 +16,7 @@ const BriefcaseComponent = () => {
   const [content, setContent] = useState<IProyect>()
 
   const proyect_data:IProyect[] = proyect;
+  const proyect_data2:IProyect[] = proyect2;
 
   const handleClick = (content:IProyect)=>{
     setContent(content);
@@ -36,6 +37,12 @@ const BriefcaseComponent = () => {
       <div className="flex flex-row  w-full h-[300px] mt-6">
         {proyect_data.map((content, intex) => (
           <BriefcaseCard key={intex} content={content} handleClick={handleClick} />
+        ))}
+      </div>
+
+      <div className="flex flex-row  w-full h-[300px] mt-6">
+        {proyect_data2.map((content, index) => (
+            <BriefcaseCard key={index} content={content} handleClick={handleClick} />
         ))}
       </div>
 
