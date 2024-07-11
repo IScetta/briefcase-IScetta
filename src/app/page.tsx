@@ -1,7 +1,6 @@
 import AboudMe from "@/components/aboud/aboud-me";
 import ContactIcons from "@/components/aboud/contact-icons";
 import BriefcaseComponent from "@/components/briefcase/briefcase-component";
-import Footer from "@/components/footer/Footer";
 import HeaderComponent from "@/components/header/header-component";
 import Image from "next/image";
 import { IoCodeSlashSharp } from "react-icons/io5";
@@ -62,7 +61,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <Footer /> */}
       </div>
     </main>
   );
