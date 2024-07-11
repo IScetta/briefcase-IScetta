@@ -3,18 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 0, 17, 47;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 17, 47;
+  --background-end-rgb: 0, 0, 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 17, 47;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -32,17 +26,3 @@ body {
   }
 }
 
-
-@layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/Roboto-Italic.ttf') format('truetype');
-  }
-}
-
-body {
-  @apply font-sans;
-}
