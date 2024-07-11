@@ -3,7 +3,7 @@ import Link from "next/link"
 const title = [
     "INICIO",
     "SOBRE MI",
-    "SKILLS",
+    "TECNOLOGIAS",
     "PORTFOLIO",
     "CONTACTO",
 ]
@@ -11,12 +11,12 @@ const title = [
 const NavBar = ()=>{
     return(
         <div className="fixed top-0 right-0 w-full z-50 ">
-        <div className=" flex flex-row justify-end p-4 w-screen dark:bg-blueDark bg-white"> 
-        <div className=" flex flex-row items-center mr-60">
+        <div className=" flex flex-row justify-end p-4 w-screen bg-blueDark "> 
+        <div className=" flex flex-row items-center mr-32">
            {title.map( (item, index)=>{
             return(
                 <div className=" mx-2 p-2" key={index}>
-                <Link href={`/`} className="hover:border-b-4 border-offRed">{item}</Link>
+                <Link href={`#${item}`} className="hover:border-b-4 border-offRed">{item}</Link>
                 </div>
             )
         })
