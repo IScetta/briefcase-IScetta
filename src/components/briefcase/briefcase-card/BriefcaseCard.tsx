@@ -25,20 +25,23 @@ const BriefcaseCard = ({
         <h2 className="text-[24px] ">{content.title}</h2>
         <h3 className="line-clamp-6">{content.description}</h3>
         <h3 className="text-[22px]">...</h3>
-        <div className=" flex flex-row justify-end items-end w-full h-full">
+        <div className=" flex flex-row justify-end items-end w-full h-full p-2">
+
           <button
             onClick={() => handleClick(content)}
-            className=" text-black bg-white text-[17px] m-2 p-1 rounded-md hover:scale-110 duration-200 ease-in-out hover:bg-offRed cursor-pointer"
+            className=" text-black bg-white text-[22px] m-2 p-1 rounded-md hover:scale-110 duration-200 ease-in-out hover:bg-offRed cursor-pointer"
           >
             Mas Informacion
           </button>
+          
           {content.link && (
-            <Link href={content?.link!}>
-              <FaExternalLinkAlt className="text-black bg-white text-[30px] m-2 p-1 px-1 rounded-md hover:scale-125 duration-200 ease-in-out hover:bg-offRed cursor-pointer" />
+            <Link href={content?.link!} className=" flex flex-row justify-center items-center text-black bg-white text-[30px] m-2 p-1 px-1 rounded-md hover:scale-125 duration-200 ease-in-out hover:bg-offRed cursor-pointer">
+              <FaExternalLinkAlt  />
+              <h3 className="text-[17px] mx-1 p-1">Demo</h3>
             </Link>
           )}
-          <Link href={content?.link_github!}>
-            <FaGithub className="text-black bg-white text-[30px] m-2 p-1 rounded-md hover:scale-125 duration-200 ease-in-out hover:bg-offRed cursor-pointer" />
+          <Link href={content?.link_github!} className="text-black bg-white text-[30px] m-2 p-1 rounded-md hover:scale-125 duration-200 ease-in-out hover:bg-offRed cursor-pointer">
+            <FaGithub  />
           </Link>
         </div>
       </div>
