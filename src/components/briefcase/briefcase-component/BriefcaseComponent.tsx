@@ -25,6 +25,7 @@ const BriefcaseComponent = () => {
       setIsOpen(true)
     }
     else setIsOpen(!isOpen)
+    document.getElementById("CARD")?.scrollIntoView({ behavior: 'smooth' });
 }
   return (
     <section>
@@ -47,10 +48,10 @@ const BriefcaseComponent = () => {
       </div>
 
         {isOpen ? 
-
-        <div className=" my-20  flex flex-col border-4 border-white w-full h-auto p-10 rounded-xl animate-fade-down animate-once animate-duration-[1100ms] ">
-          <div className="  flex justify-end ">
-          <button onClick={()=>setIsOpen(!isOpen)} ><MdClose className="text-[55px] w-full hover:text-offRed "/></button>
+        <div id="CARD" className=" py-24">
+        <div  className=" flex flex-col border-4 border-white w-full h-auto p-10 rounded-xl animate-fade-down animate-once animate-duration-[1100ms] ">
+          <div  className="  flex justify-end ">
+          <button onClick={()=>setIsOpen(!isOpen)} ><MdClose  className="text-[55px] w-full hover:text-offRed "/></button>
           </div>
 
           <h1 className="text-[40px] border-b-4 border-offRed">{content?.title}</h1>
@@ -73,8 +74,9 @@ const BriefcaseComponent = () => {
           </div>
 
         </div>
+        </div>
           :
-          <div ></div>
+          <div id="CARD"></div>
         }
 
 

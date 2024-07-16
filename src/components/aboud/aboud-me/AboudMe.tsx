@@ -8,10 +8,7 @@ import { Canvas } from "@react-three/fiber";
 import Bedroom3D from "../bedroom-3d/Bedroom3D";
 import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaReact } from "react-icons/fa";
-import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
-import { SiExpress, SiMongodb, SiTailwindcss, SiWebpack } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+
 
 
 const AboudMe = () => {
@@ -37,36 +34,6 @@ const AboudMe = () => {
           universitarios en el futuro.
         </h3>
 
-          <div className="flex flex-row  mt-10 ">
-            
-            <div className=" mr-10 w-[50%]">
-              <h2 className=" text-[25px] border-b-4 border-offRed">Frontend</h2>
-              <div className=" m-2 p-2 flex flex-wrap justify-between ">
-              <RiNextjsFill className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <FaReact className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <FaCss3Alt className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <FaHtml5 className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <FaJsSquare className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <BiLogoTypescript className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <SiTailwindcss className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <FaBootstrap className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <SiWebpack className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              </div>
-            </div>
-
-            <div className=" w-[50%]">
-              <h2 className=" text-[25px] border-b-4 border-offRed">Backend</h2>
-              <div className="m-2 p-2 flex flex-wrap justify-between ">
-              <FaJsSquare className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <BiLogoTypescript className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <BiLogoPostgresql className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <SiMongodb className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <FaNodeJs className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-200"/>
-              <SiExpress className="text-offRed text-5xl mx-3 mb-4 hover:transform hover:scale-125 ease-linear duration-300"/>
-              </div>
-            </div>
-
-          </div>
 
       </div>
 
