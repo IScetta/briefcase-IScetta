@@ -20,7 +20,7 @@ const Contact = ()=>{
       </h2>
 
   <div className='flex flex-col mt-6 ml-[25%]  bg-no-repeat bg-cover bg-center w-[50%] bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdbVIHNxi_n0f-d4d7A9erHHZ4Owfo6q3Yw&s")]  rounded-xl '>
-  <div className='backdrop-blur-md w-full rounded-xl h-full flex-col justify-center items-center p-10'>
+  <div className='backdrop-blur-[7px] w-full rounded-xl h-full flex-col justify-center items-center p-10'>
 
     <h1 className='flex text-center text-[20px] p-2 mb-10 text-white  font-bold'>Necesitas contactarme o dejarme un comentario</h1>
     <Formik
@@ -53,13 +53,13 @@ const Contact = ()=>{
           <div className='flex flex-col justify-center items-center mb-5 w-full'>
           <label htmlFor="name" className='text-[18px] text-white font-semibold'>Nombre:</label>
           <Field type ="text" name="name" className="text-[12px] my-2 p-2 bg-opacity-20 bg-white text-white w-[75%] rounded-md "/>
-          <ErrorMessage name="name" component="div" className='text-red-600 text-[14px] font-semibold bg-white bg-opacity-35 p-1 rounded-xl  animate-fade-down animate-once animate-ease-in-out'/>
+          <ErrorMessage name="name" component="div" className=' text-red-600 text-[14px] font-semibold bg-white bg-opacity-35 p-1 rounded-xl  animate-fade-down animate-once animate-ease-in-out'/>
           </div>
 
           <div className='flex flex-col justify-center items-center mb-10 w-full'>
           <label htmlFor="email" className='text-[18px] text-white font-semibold'>Correo Electronico:</label>
           <Field type="email" name="email" className="text-[12px] my-2 p-2 bg-opacity-20 bg-white text-white w-[75%] rounded-md "/>
-          <ErrorMessage name="email" component="div" className='text-red-600 text-[14px] font-semibold bg-white bg-opacity-35 p-1 rounded-xl  animate-fade-down animate-once animate-ease-in-out'/>
+          <ErrorMessage name="email" component="div" className=' text-red-600 text-[14px] font-semibold bg-white bg-opacity-35 p-1 rounded-xl  animate-fade-down animate-once animate-ease-in-out'/>
           </div>
 
 

@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="" className=" mt-72 ">
+        <section id="" className="mt-72 ">
           <div className="">
             <Footer />
           </div>
