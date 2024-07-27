@@ -1,6 +1,7 @@
 import AboudMe from "@/components/aboud/aboud-me";
 import ContactIcons from "@/components/aboud/contact-icons";
 import BriefcaseComponent from "@/components/briefcase/briefcase-component";
+import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import HeaderComponent from "@/components/header/header-component";
 import Tecnologi from "@/components/tecnologi";
@@ -64,6 +65,12 @@ export default function Home() {
         <section id="PORTFOLIO" className="mx-32 mt-72 py-24">
           <div className="">
             <BriefcaseComponent />
+          </div>
+        </section>
+
+        <section id="CONTACTO" className="mx-32 mt-72 py-24">
+          <div className="">
+            <Contact />
           </div>
         </section>
 
