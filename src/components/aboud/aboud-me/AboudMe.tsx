@@ -1,6 +1,3 @@
-// https://sketchfab.com/3d-models/low-poly-room-a6bf7976f3ac401e96907aa5b8a0c1c1
-// https://sketchfab.com/3d-models/isometric-bedroom-e5216b41fc4a4fb0a49ce7d4b5795248
-// FAF7D5
 
 "use client"
 
@@ -14,7 +11,7 @@ import { OrbitControls } from "@react-three/drei";
 const AboudMe = () => {
   return (
     <div className="  flex flex-row w-full h-[70vh]">
-      <div className=" w-[50%] pr-10 ">
+      <div className=" w-[100%] sm:w-[50%] sm:pr-10 ">
         <h2 className=" flex items-center text-[35px] border-b-4 border-offRed">
           {" "}
           <div className="text-offRed pr-2">&lt;</div>Sobre Mi
@@ -37,7 +34,7 @@ const AboudMe = () => {
 
       </div>
 
-      <div className="w-[50%] h-auto ">
+      <div className=" hidden sm:block sm:border-2 sm:border-white w-[50%] h-auto ">
       {/* <Canvas camera={{ zoom: 2.1, position: [-36.958, 32.254, -30.532] }} shadows> */}
       <Canvas camera={{ zoom: 2.1, position: [300, 220, 200] }} shadows>
         <ambientLight intensity={0.2} />
