@@ -12,7 +12,7 @@ const BriefcaseCard = ({
   handleClick: (data: IProyect) => void;
 }) => {
   return (
-    <div className="relative flex flex-1 hover:flex-[3] m-2 rounded-xl  border-4 border-white bg-transparent h-full transition-all duration-500 ease-out">
+    <div className="relative flex  flex-1 hover:flex-[3] m-2 rounded-xl  border-4 border-white bg-transparent h-full transition-all duration-500 ease-out">
       <div className="absolute inset-0 flex items-center rounded-xl bg-black justify-center transition-opacity duration-200 ease-in-out opacity-100 hover:hidden">
         <Image
           className="object-cover w-full h-full rounded-xl"
@@ -26,16 +26,16 @@ const BriefcaseCard = ({
         <h2 className="text-[24px] border-b-4 border-white">{content.title}</h2>
         <h3 className="text-clip overflow-hidden ...">{content.description}</h3>
         <h3 className="text-[24px]">...</h3>
-        <div className=" flex flex-row justify-end items-end w-full h-full p-2">
-
-          <button
+        <div className=" flex flex-col justify-center items-center sm:flex-row sm:justify-end sm:items-end w-full h-full p-2">
+            <button
             onClick={() => handleClick(content)}
             className=" text-black bg-white text-[17px] m-2 p-1 rounded-md hover:scale-110 duration-200 ease-in-out hover:bg-offRed cursor-pointer"
           >
             Mas Informacion
           </button>
           
-          {content.link && (
+          <div className=" flex flex-wrap">
+            {content.link && (
             <Link href={content?.link!} className=" flex flex-row justify-center items-center text-black bg-white text-[25px] m-2 p-1 px-1 rounded-md hover:scale-125 duration-200 ease-in-out hover:bg-offRed cursor-pointer">
               <IoLink  />
             </Link>
@@ -43,6 +43,11 @@ const BriefcaseCard = ({
           <Link href={content?.link_github!} className="text-black bg-white text-[25px] m-2 p-1 rounded-md hover:scale-125 duration-200 ease-in-out hover:bg-offRed cursor-pointer">
             <FaGithub  />
           </Link>
+          
+          </div>
+          
+          
+          
         </div>
       </div>
     </div>

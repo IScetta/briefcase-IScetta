@@ -12,17 +12,17 @@ const Footer = () => {
       
   return (
     <section className="bg-blueDark">
-      <div className="flex flex-row justify-around items-start px-32  bg-blueDark">
-        <h1 className=" flex flex-col text-[40px] mt-20">
+      <div className="flex flex-col px-16 sm:flex-row sm:justify-around sm:items-start sm:px-32  bg-blueDark">
+        <h1 className=" flex flex-row sm:flex-col text-[40px] mt-10 sm:mt-20">
           <div className="flex flex-row">
-            <div className=" text-offRed ">I </div>saías{" "}
+            <div className=" text-offRed">I</div>saías {" "}
           </div>
           <div className="flex flex-row">
-            <div className=" text-offRed ">S</div>cetta
+            <div className=" text-offRed ml-3">S</div>cetta
           </div>
         </h1>
 
-        <ul className="mt-20">
+        <ul className="mt-10 sm:mt-20">
           <li className="text-offRed font-bold text-[20px]">Navegación</li>
           <li>
             <button onClick={() => scrollToSection("INICIO")}>
@@ -46,7 +46,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className="mt-20">
+        <ul className="mt-10 sm:mt-20">
           <li className="text-offRed font-bold text-[20px]">Redes Sociales</li>
           <li>
             <Link href={"https://github.com/IScetta"}>
@@ -65,7 +65,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className="mt-20">
+        <ul className="mt-10 sm:mt-20">
           <li className="text-offRed font-bold text-[20px]">Contactos</li>
           <li>
             <h3 className=" flex flex-row m-1 border-b-2 border-blueDark"><FaMapMarkerAlt className="m-1"/>Argentina, Entre Rios</h3>
@@ -81,7 +81,7 @@ const Footer = () => {
 
       <div className="border-2 border-offRed my-2 mt-16 px-32 "></div>
 
-      <h3 className="flex flex-row p-4 justify-center text-[15px]">Hecho con <FaHeart className="ml-2 mr-1 text-offRed"/>, © 2024 Scetta Isaias. Todos los derechos reservados.</h3>
+      <h3 className="flex flex-row p-4 justify-center text-[10px] sm:text-[15px]">Hecho con <FaHeart className="ml-2 mr-1 text-offRed"/>, © 2024 Scetta Isaias. Todos los derechos reservados.</h3>
     </section>
   );
 };
