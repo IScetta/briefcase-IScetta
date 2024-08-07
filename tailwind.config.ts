@@ -18,20 +18,6 @@ const config: Config = {
       opacity: {
         // "gradient": 'linear-gradient(0deg,#00112F,transparent)',
       },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-out',
-        'fade-out': 'fadeOut 0.5s ease-in',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
-        },
-        fadeOut: {
-          '0%': { opacity: 1 },
-          '100%': { opacity: 0 },
-        },
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
