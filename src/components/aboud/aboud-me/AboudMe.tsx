@@ -12,7 +12,7 @@ const AboudMe = () => {
   return (
     <div className="  flex flex-row w-full h-[70vh]">
       <div className=" w-[100%] sm:w-[50%] sm:pr-10 ">
-        <h2 className=" flex items-center text-[35px] border-b-4 border-offRed">
+        <h2 className=" flex justify-center sm:justify-start items-center text-[35px] border-b-4 border-offRed">
           {" "}
           <div className="text-offRed pr-2">&lt;</div>Sobre Mi
           <div className="text-offRed pl-2">&gt;</div>
@@ -34,7 +34,7 @@ const AboudMe = () => {
 
       </div>
 
-      <div className=" hidden sm:block sm:border-2 sm:border-white w-[50%] h-auto ">
+      <div className=" hidden sm:block w-[50%] h-auto ">
       {/* <Canvas camera={{ zoom: 2.1, position: [-36.958, 32.254, -30.532] }} shadows> */}
       <Canvas camera={{ zoom: 2.1, position: [300, 220, 200] }} shadows>
         <ambientLight intensity={0.2} />

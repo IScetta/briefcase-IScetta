@@ -13,16 +13,16 @@ export interface error {
 const Contact = ()=>{
     return(
       <section>
-        <h2 className=" flex items-center text-[35px] border-b-4 border-offRed">
+        <h2 className=" flex justify-center sm:justify-start sm:items-center text-[35px] border-b-4 border-offRed">
         {" "}
         <div className="text-offRed pr-2">&lt;</div>Contacto
         <div className="text-offRed pl-2">&gt;</div>
       </h2>
 
-  <div className='flex flex-col mt-6 ml-[25%]  bg-no-repeat bg-cover bg-center w-[50%] bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdbVIHNxi_n0f-d4d7A9erHHZ4Owfo6q3Yw&s")]  rounded-xl '>
-  <div className='backdrop-blur-[7px] w-full rounded-xl h-full flex-col justify-center items-center p-10'>
+  <div className='flex flex-col mt-6 sm:ml-[25%]  bg-no-repeat bg-cover bg-center sm:w-[50%] bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDdbVIHNxi_n0f-d4d7A9erHHZ4Owfo6q3Yw&s")]  rounded-xl '>
+  <div className='backdrop-blur-[7px] w-full rounded-xl h-full flex-col justify-center items-center sm:p-10'>
 
-    <h1 className='flex text-center text-[20px] p-2 mb-10 text-white  font-bold'>Necesitas contactarme o dejarme un comentario</h1>
+    <h1 className='flex text-center text-[20px] p-2 my-10 text-white  font-bold'>Necesitas contactarme o dejarme un comentario</h1>
     <Formik
       initialValues={{ name:"", email: '', content: '' }}
       validate={values => {

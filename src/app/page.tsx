@@ -18,7 +18,7 @@ export default function Home() {
           <section className="flex flex-col h-screen ">
           <div className="">
             <Image
-              className=" absolute w-full h-full darck:opacity-10 opacity-20"
+              className=" absolute sm:w-full sm:h-full darck:opacity-10 opacity-20"
               src="/PuenteColganteEdit.png"
               alt="Bg"
               width={1600}
@@ -26,23 +26,24 @@ export default function Home() {
             />
           </div>
           <div className=" flex flex-row justify-items-start items-center z-10 mt-[10%] animate-fade-up animate-once animate-duration-[1100ms]">
-            <div className="ml-32 w-[50%]">
+            <div className="mx-8 sm:ml-32 sm:w-[50%]">
               <Image
-                className=" rounded-full w-[20%] "
+                className=" rounded-full w-[40%] sm:w-[20%] "
                 src="/Img-Perfil.jpg"
                 alt="perfil"
                 width={719}
                 height={720}
               />
-              <h1 className=" flex flex-row text-[70px]  ">
+              <h1 className=" flex flex-row text-[50px] sm:text-[70px] font-semibold">
                 <div className=" text-offRed ">I </div>saías{" "}
                 <div className=" text-offRed ml-5">S</div>cetta
               </h1>
-              <h2 className=" flex items-center text-[35px]">
+              <h2 className=" flex items-center text-[30px] sm:text-[35px]">
                 Programador Web FullStack{" "}
-                <IoCodeSlashSharp className="text-offRed mx-2" />
+                <div className="text-offRed mx-2 font-semibold">&lt;/&gt;</div>
+                {/* <IoCodeSlashSharp className="text-offRed mx-2" /> */}
               </h2>
-              <h3 className=" text-[20px] ">
+              <h3 className="mt-6 text-[20px] ">
                 Mi objetivo es seguir creciendo profesionalmente y aportar
                 soluciones innovadoras en cada proyecto que emprendo.
               </h3>
@@ -54,21 +55,21 @@ export default function Home() {
         </section>
 
         
-        <section id="SOBRE MI" className="mx-32 my-72 py-24">
+        <section id="SOBRE MI" className="mx-8 sm:mx-32 sm:my-72 py-24">
           <AboudMe />
         </section>
 
-        <section id="TECNOLOGIAS" className="mx-32 my-72 py-24">
+        <section id="TECNOLOGIAS" className="mx-8 sm:mx-32 smy-72 py-24">
           <Tecnologi />
         </section>
 
-        <section id="PORTFOLIO" className="mx-32 mt-72 py-24">
+        <section id="PORTFOLIO" className="mx-8 sm:mx-32 sm:my-72 py-24">
           <div className="">
             <BriefcaseComponent />
           </div>
         </section>
 
-        <section id="CONTACTO" className="mx-32 mt-72 py-24">
+        <section id="CONTACTO" className="mx-8 sm:mx-32 sm:my-72 py-24">
           <div className="">
             <Contact />
           </div>
