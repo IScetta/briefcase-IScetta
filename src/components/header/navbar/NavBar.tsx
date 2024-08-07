@@ -36,11 +36,11 @@ const NavBar = () => {
         </div>
 
         {!isOpen && (
-          <div className="flex flex-row justify-between mx-5 w-full">
+          <div className="sm:hidden flex flex-row justify-between mx-5 w-full">
             <button onClick={()=>scrollToSection("INICIO")} className="text-offRed text-[35px] font-bold">IS</button>
           <button
             onClick={() => setIsOpen(true)}
-            className="sm:hidden text-white text-[35px] "
+            className=" text-white text-[35px] "
           >
             <GiHamburgerMenu />
           </button>
