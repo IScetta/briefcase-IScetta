@@ -14,7 +14,7 @@ const DownloadCv = () => {
   };
 
   return (
-    <button onClick={handleDownload} className="flex items-center p-2 text-[12px] border-4 border-white rounded-md hover:border-offRed">
+    <button onClick={handleDownload} className="flex w-fit sm:items-center ml-10 mt-4 sm:ml-0 sm:mt-0 p-2 text-[20px] sm:text-[12px] font-bold sm:font-normal border-4 border-white rounded-md hover:border-offRed">
       CV
     </button>
   );

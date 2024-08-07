@@ -18,7 +18,7 @@ const Footer = () => {
             <div className=" text-offRed">I</div>saías {" "}
           </div>
           <div className="flex flex-row">
-            <div className=" text-offRed ml-3">S</div>cetta
+            <div className=" text-offRed sm:ml-0 ml-3">S</div>cetta
           </div>
         </h1>
 
