@@ -36,12 +36,15 @@ const NavBar = () => {
         </div>
 
         {!isOpen && (
+          <div className="flex flex-row justify-between mx-5 w-full">
+            <button onClick={()=>scrollToSection("INICIO")} className="text-offRed text-[35px] font-bold">IS</button>
           <button
             onClick={() => setIsOpen(true)}
             className="sm:hidden text-white text-[35px] "
           >
             <GiHamburgerMenu />
           </button>
+          </div>
         )}
 
         {isOpen ? (
@@ -50,7 +53,7 @@ const NavBar = () => {
             <div className="flex flex-col mt-10 font-bold">
               {title.map((item, index) => {
                 return (
-                  <div className=" mx-8 p-2" key={index}>
+                  <div className=" ml-8 p-2" key={index}>
                     <button
                       onClick={() => scrollToSection(item)}
                       className="text-[20px]  border-b-4 border-[#00183E] hover:border-offRed"
@@ -64,7 +67,7 @@ const NavBar = () => {
             </div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className=" text-white text-[55px] flex justify-end w-full font-bold"
+                className=" text-white text-[55px]  flex justify-center w-full font-bold"
               >
                 <IoIosClose />
               </button>
