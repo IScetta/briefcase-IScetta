@@ -24,8 +24,8 @@ const BriefcaseCard = ({
       </div>
       <div className="absolute p-6 inset-0 flex flex-col items-center rounded-xl bg-black bg-opacity-70 transition-opacity duration-200 ease-in-out opacity-0 hover:opacity-100">
         <h2 className="text-[24px] border-b-4 border-white">{content.title}</h2>
-        <h3 className="text-clip overflow-hidden ...">{content.description}</h3>
-        <h3 className="text-[24px]">...</h3>
+        <h3 className="">{content.description.slice(0,150)} ...</h3>
+        {/* <h3 className="text-[24px]">...</h3> */}
         <div className=" flex flex-col justify-center items-center sm:flex-row sm:justify-end sm:items-end w-full h-full p-2">
             <button
             onClick={() => handleClick(content)}
