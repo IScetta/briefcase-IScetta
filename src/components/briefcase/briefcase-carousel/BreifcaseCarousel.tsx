@@ -29,6 +29,23 @@ export default function BreifcaseCarousel({imageList}:{imageList:string[] | unde
         spaceBetween={10}
         slidesPerView={4}
         navigation
+        breakpoints={{
+            0:{
+              slidesPerView:1
+            },
+            480:{
+              slidesPerView:2
+            },
+            768:{
+              slidesPerView:3
+            },
+            1250:{
+                slidesPerView:4
+              },
+            1536:{
+              slidesPerView:5
+            },
+          }}
         pagination={{ clickable: true }}
         autoplay={{
           delay: 5000,
