@@ -4,5 +4,6 @@ export interface IProyect {
     image: string;
     link?: string;
     link_github: string;
-    // technologies: string[];
+    technologies?: string[];
+    image_list: string[];
 }

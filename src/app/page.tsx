@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 import HeaderComponent from "@/components/header/header-component";
 import Tecnologi from "@/components/tecnologi";
 import Image from "next/image";
-import { IoCodeSlashSharp } from "react-icons/io5";
+
 
 
 export default function Home() {
