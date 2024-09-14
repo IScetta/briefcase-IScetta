@@ -27,7 +27,7 @@ export const proyect: IProyect[] = [
     link: "",
     link_github: "https://github.com/pi-rym/PM3-IScetta",
     image: "/FoxesEsport-img/FoxesEsport-img.png",
-    image_list:["/FoxesEsport-img/FoxesEsport-1.jpg","/FoxesEsport-img/FoxesEsport-2.jpg","/FoxesEsport-img/FoxesEsport-3.jpg","/FoxesEsport-img/FoxesEsport-4.jpg","/FoxesEsport-img/FoxesEsport-5.jpg","/FoxesEsport-img/FoxesEsport-6.jpg"]
+    image_list:["/FoxesEsport-img/foxesEsport-1.jpg","/FoxesEsport-img/foxesEsport-2.jpg","/FoxesEsport-img/foxesEsport-3.jpg","/FoxesEsport-img/foxesEsport-4.jpg","/FoxesEsport-img/foxesEsport-5.jpg","/FoxesEsport-img/foxesEsport-6.jpg"]
   },
 ];
 
